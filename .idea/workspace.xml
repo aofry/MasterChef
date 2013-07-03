@@ -2,16 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d3cb3f2-312c-4fb4-8cf8-7c24f346c361" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/iaas_controller.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web_access.rb" />
+      <change type="DELETED" beforePath="C:\work\MasterChef\fogCompute.rb" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MasterChef.iml" afterPath="$PROJECT_DIR$/MasterChef.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fogCompute.rb" afterPath="$PROJECT_DIR$/fogCompute.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MasterChef.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="9d3cb3f2-312c-4fb4-8cf8-7c24f346c361" time="1372866670652" ignored="false" />
-    <file path="/fogCompute.rb" changelist="9d3cb3f2-312c-4fb4-8cf8-7c24f346c361" time="1372866500864" ignored="false" />
+    <file path="/Dummy.txt" changelist="9d3cb3f2-312c-4fb4-8cf8-7c24f346c361" time="1372867106773" ignored="false" />
+    <file path="/fogCompute.rb" changelist="9d3cb3f2-312c-4fb4-8cf8-7c24f346c361" time="1372869626185" ignored="false" />
     <file path="/install.bat" changelist="9d3cb3f2-312c-4fb4-8cf8-7c24f346c361" time="1372862110949" ignored="false" />
+    <file path="/web_access.rb" changelist="9d3cb3f2-312c-4fb4-8cf8-7c24f346c361" time="1372883017933" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,10 +90,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fogCompute.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/fogCompute.rb">
+      <file leaf-file-name="iaas_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/iaas_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="19" selection-start="945" selection-end="945" vertical-scroll-proportion="0.5588235">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web_access.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web_access.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="16" selection-start="276" selection-end="276" vertical-scroll-proportion="0.5">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="servers.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://C:/Ruby193/lib/ruby/gems/1.9.1/gems/fog-1.12.1/lib/fog/ecloud/models/compute/servers.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="32" selection-start="773" selection-end="785" vertical-scroll-proportion="-11.333333">
               <folding />
             </state>
           </provider>
@@ -117,6 +137,7 @@
       <list>
         <option value="$PROJECT_DIR$/install.bat" />
         <option value="$PROJECT_DIR$/fogCompute.rb" />
+        <option value="$PROJECT_DIR$/web_access.rb" />
       </list>
     </option>
   </component>
@@ -194,7 +215,7 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
   </component>
-  <component name="RunManager" selected="Ruby.fogCompute">
+  <component name="RunManager" selected="Ruby.web_access">
     <configuration default="false" name="mini_client" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="MasterChef" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -246,6 +267,26 @@
       <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/fogCompute.rb" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="web_access" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+      <module name="MasterChef" />
+      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/web_access.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
+      <RunnerSettings RunnerId="RubyDebugRunner" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="RubyDebugRunner" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -376,16 +417,18 @@
       <patterns />
       <method />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Ruby.mini_client" />
       <item index="1" class="java.lang.String" itemvalue="Ruby.hello_world" />
       <item index="2" class="java.lang.String" itemvalue="Ruby.fogCompute" />
+      <item index="3" class="java.lang.String" itemvalue="Ruby.web_access" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Ruby.fogCompute" />
-        <item index="1" class="java.lang.String" itemvalue="Ruby.hello_world" />
-        <item index="2" class="java.lang.String" itemvalue="Ruby.mini_client" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Ruby.web_access" />
+        <item index="1" class="java.lang.String" itemvalue="Ruby.fogCompute" />
+        <item index="2" class="java.lang.String" itemvalue="Ruby.hello_world" />
+        <item index="3" class="java.lang.String" itemvalue="Ruby.mini_client" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -430,28 +473,32 @@
       <created>1372864770228</created>
       <updated>1372864770228</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="bootstrap compute">
+      <created>1372867118189</created>
+      <updated>1372867118189</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1932" height="1056" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32814237" sideWeight="0.49358287" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32814237" sideWeight="0.49144384" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39933258" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32814237" sideWeight="0.5026738" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32814237" sideWeight="0.50481284" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.49786097" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.49572194" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973261" sideWeight="0.67074525" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24973261" sideWeight="0.6718576" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5625668" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5604278" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -520,7 +567,15 @@
     <MESSAGE value="bootstrap compute" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/web_access.rb</url>
+          <line>8</line>
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/mini_client.rb">
@@ -530,23 +585,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fogCompute.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="35" selection-start="48" selection-end="68" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mini_client.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fogCompute.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="36" selection-start="551" selection-end="551" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -577,6 +618,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://C:/Ruby193/lib/ruby/gems/1.9.1/gems/fog-1.12.1/lib/fog/ecloud/models/compute/servers.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="32" selection-start="773" selection-end="785" vertical-scroll-proportion="-11.333333">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/hello_world.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="0" selection-start="124" selection-end="156" vertical-scroll-proportion="0.0">
@@ -584,9 +632,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fogCompute.rb">
+    <entry file="file://$PROJECT_DIR$/iaas_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="19" selection-start="945" selection-end="945" vertical-scroll-proportion="0.5588235">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_access.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="16" selection-start="276" selection-end="276" vertical-scroll-proportion="0.5">
           <folding />
         </state>
       </provider>

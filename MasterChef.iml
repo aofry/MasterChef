@@ -14,7 +14,11 @@
     <orderEntry type="library" scope="PROVIDED" name="net-scp (v1.1.1, ruby-1.9.3-p194) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="net-ssh (v2.6.7, ruby-1.9.3-p194) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.5.5, ruby-1.9.3-p194) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rack (v1.4.1, ruby-1.9.3-p194) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rack-protection (v1.2.0, ruby-1.9.3-p194) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ruby-hmac (v0.4.0, ruby-1.9.3-p194) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sinatra (v1.3.3, ruby-1.9.3-p194) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="tilt (v1.3.3, ruby-1.9.3-p194) [gem]" level="application" />
   </component>
 </module>
 

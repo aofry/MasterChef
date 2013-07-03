@@ -1,10 +1,13 @@
 require 'rubygems'
 require 'fog'
+require 'logger'
 
 class IaaSController
+  $logger = Logger.new(STDOUT)
+
   def initialize(name)
     @name = name.capitalize
-    #http://rubydoc.info/gems/fog/1.1.2/Fog/
+    #http://rubydoc.info/gems/fog/frames/Fog
     @conn = Fog::Compute.new(
         :provider => "HP",
         :hp_access_key => "E181R1S6S3VE62DW75F5",
@@ -17,13 +20,15 @@ class IaaSController
   end
 
   def getFarmInfo
-    puts @conn
+    $logger.info(@conn)
 
-    puts @conn.servers.size
+    $logger.info(@conn.servers.size)
 
     server = @conn.servers.get('1330449')
-    puts server.name
-    puts server.public_ip_address
+    $logger.info(server.name)
+    $logger.info(server.public_ip_address)
+    $logger.info(server.to_yaml_properties)
+
   end
 
   def getIaasInfo
@@ -48,9 +53,9 @@ class IaaSController
   end
 end
 
-iaaSController = IaaSController.new("World")
+#iaaSController = IaaSController.new("World")
 
-iaaSController.getFarmInfo
+#iaaSController.getFarmInfo
 #iaaSController.getIaasInfo
-iaaSController.bootstrapCompute
+#iaaSController.bootstrapCompute
 
