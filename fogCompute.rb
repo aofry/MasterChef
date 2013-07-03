@@ -15,23 +15,24 @@ conn = Fog::Compute.new(
 puts conn
 
 puts conn.servers.size
-#server = conn.servers.get('1753639')
+
 server = conn.servers.get('1330449')
 puts server.name
-puts server.public_ip_address   
+puts server.public_ip_address
 
+conn.flavors.table([:id, :name, :ram, :disk])
 
-# directory = conn.directories.create(
-#   :key    => "fog-demo",
-#   :public => false
-# )
+conn.images.table([:id, :name, :status, :created_at])
 
-# file = directory.files.create(
-#   :key    => 'WindowsUpdate.log',
-#   :body   => File.open("c:/windows/WindowsUpdate.log"),
-#   :public => false
-# )
-
-# #directory.destroy
-
-# puts file.to_json
+#new_server = conn.servers.create(
+#    :name => "My Shiny Server",
+#    :flavor_id => 1,
+#    :image_id => 2,
+#    :key_name => "aofry_az3",
+#    :security_groups => ["adi"]
+#)
+#new_server.id       # returns the id of the server
+#new_server.name     # => "My Shiny Server"
+#new_server.state    # returns the state of the server e.g. BUILD
+#new_server.private_ip_address   # returns the private ip address
+#new_server.public_ip_address   # returns the public ip address, if any assigned
