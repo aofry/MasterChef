@@ -1,21 +1,23 @@
 require 'rubygems'
 require 'fog'
 require 'logger'
+require 'yaml'
 
 class IaaSController
   $logger = Logger.new(STDOUT)
 
   def initialize(name)
+    config = YAML.load_file('master.yaml')
     @name = name.capitalize
     #http://rubydoc.info/gems/fog/frames/Fog
     @conn = Fog::Compute.new(
         :provider => "HP",
-        :hp_access_key => "E181R1S6S3VE62DW75F5",
-        :hp_secret_key => "vZLMu7GOh1W8maefjT0CdrMxrvqRjpn0CN2BbV9M",
-        :hp_auth_uri => "https://region-a.geo-1.identity.hpcloudsvc.com:35357/v2.0/",
-        :connection_options => {:ssl_ca_file => "c:/users/ofry/Documents/Dropbox/hp/hpcs/aofry_az3.pem", :proxy => 'http://rhvwebcachevip.bastion.europe.hp.com:8080'},
-        :hp_avl_zone => "az-3.region-a.geo-1",
-        :hp_tenant_id => "19441796971990")
+        :hp_access_key => config['hpcs']['hp_access_key'],
+        :hp_secret_key => config['hpcs']['hp_secret_key'],
+        :hp_auth_uri => config['hpcs']['hp_auth_uri'],
+        :connection_options => {:ssl_ca_file => config['hpcs']['ssl_ca_file'], :proxy => config['hp_office']['http_proxy']},
+        :hp_avl_zone => config['hpcs']['hp_avl_zone'],
+        :hp_tenant_id => config['hpcs']['hp_tenant_id'])
 
   end
 
