@@ -2,29 +2,61 @@ require 'rubygems'
 require 'chef'
 require 'chef/knife'
 require 'chef/node'
-require 'chef/knife/node_run_list_add'
+require 'yaml'
 
-Chef::Config[:node_name]='home'
-Chef::Config[:client_key]='d:/work/.chef/home.pem'
-Chef::Config[:chef_server_url]='https://15.185.249.30'
-#Chef::Config[:https_proxy]='http://rhvwebcachevip.bastion.europe.hp.com:8080'
-#Chef::Config[:http_proxy]='http://rhvwebcachevip.bastion.europe.hp.com:8080'
+def initConfig
+  config = YAML.load_file('client.yaml')
 
-#Chef::ApiClient.list.each do |cl|
-#  puts cl.first
-#end
+  Chef::Config[:node_name]=config['connection']['node_name']
+  Chef::Config[:client_key]=config['connection']['client_key']
+  Chef::Config[:chef_server_url]=config['connection']['chef_server_url']
+  Chef::Config[:https_proxy]=config['hp_office']['https_proxy']
+  Chef::Config[:http_proxy]=config['hp_office']['http_proxy']
+end
 
-#knife = Chef::Knife::ClientList.new
-#knife.run
 
-#homeClient = Chef::ApiClient.load('home')
-#puts homeClient
+def printClients
+  Chef::ApiClient.list.each do |cl|
+    puts cl.first
+  end
+end
 
-node = Chef::Node.load('tomcat')
-puts node
-puts node.run_list
-node.run_list << 'apache2'
-node.save
+def changeRunList(itemToAdd)
+  node = Chef::Node.load('tomcat')
+  puts node
+  puts node.run_list
+
+  node.run_list << itemToAdd
+  node.save
+end
+
+def loadClient
+ #knife = Chef::Knife::ClientList.new
+ #knife.run
+
+ homeClient = Chef::ApiClient.load('home')
+ puts homeClient
+end
+
+def setAttribute()
+  node = Chef::Node.load('tomcat')
+  puts node
+  node.consume_attributes({"one" => "adi", "three" => "ofry"})
+  node.save
+
+  # print all attribute
+  #node.each_attribute do |attrib|
+  #  puts attrib
+  #end
+end
+
+
+
+initConfig
+setAttribute
+
+#loadClient
+#changeRunList('apache2')
 
 #nrla = Chef::Knife::NodeRunListAdd.new
 #nrla.add_to_run_list(node, ['recipe[apache2]'])

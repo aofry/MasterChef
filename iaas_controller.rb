@@ -13,7 +13,7 @@ class IaaSController
         :hp_access_key => "E181R1S6S3VE62DW75F5",
         :hp_secret_key => "vZLMu7GOh1W8maefjT0CdrMxrvqRjpn0CN2BbV9M",
         :hp_auth_uri => "https://region-a.geo-1.identity.hpcloudsvc.com:35357/v2.0/",
-        :connection_options => {:ssl_ca_file => "d:/adi/Dropbox/hp/hpcs/aofry_az3.pem"},
+        :connection_options => {:ssl_ca_file => "c:/users/ofry/Documents/Dropbox/hp/hpcs/aofry_az3.pem", :proxy => 'http://rhvwebcachevip.bastion.europe.hp.com:8080'},
         :hp_avl_zone => "az-3.region-a.geo-1",
         :hp_tenant_id => "19441796971990")
 
@@ -53,9 +53,9 @@ class IaaSController
   end
 end
 
-#iaaSController = IaaSController.new("World")
+iaaSController = IaaSController.new("World")
 
-#iaaSController.getFarmInfo
+iaaSController.getFarmInfo
 #iaaSController.getIaasInfo
 #iaaSController.bootstrapCompute
 

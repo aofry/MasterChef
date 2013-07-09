@@ -1,0 +1,7 @@
+connection:
+  node_name:        knife-laptop
+  client_key:       c:/users/ofry/.chef/knife.pem
+  chef_server_url:  https://15.185.249.30
+hp_office:
+  http_proxy:       http://rhvwebcachevip.bastion.europe.hp.com:8080
+  https_proxy:       http://rhvwebcachevip.bastion.europe.hp.com:8080
