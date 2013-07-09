@@ -5,7 +5,7 @@ require 'chef/node'
 require 'yaml'
 
 def initConfig
-  config = YAML.load_file('client.yaml')
+  config = YAML.load_file('master.yaml')
 
   Chef::Config[:node_name]=config['connection']['node_name']
   Chef::Config[:client_key]=config['connection']['client_key']
