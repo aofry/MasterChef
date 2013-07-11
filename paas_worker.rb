@@ -59,7 +59,9 @@ class PaasWorker
     knife.options=MyCLI.options
 
     #set up client creation arguments and run
-    args = ['client', 'list', '--disable-editing' ]
+    #knife ssh name:tomcat 'ls -l' -x ubuntu -i d:/work/.chef/home.pem -a ipaddress
+    #args = ['client', 'list', '--disable-editing' ]
+    args = ['ssh', 'name:tomcat', 'ls -l', '-x', 'ubuntu', '-i', 'd:/work/.chef/home.pem', '-a', 'ipaddress']
     new_client = Chef::Knife.run(args, MyCLI.options)
   end
 
