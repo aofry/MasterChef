@@ -53,6 +53,7 @@ class PaasWorker
   end
 
   def ssh
+    #http://stackoverflow.com/questions/16826003/invoking-knife-in-a-ruby-class
     MyCLI.option(:disable_editing, :long => "--disable-editing", :boolean => true)
 
     knife = Chef::Knife.new
