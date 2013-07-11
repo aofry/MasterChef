@@ -53,21 +53,24 @@ class PaasWorker
   end
 
   def ssh
-    other_opts = {
-        :ssh_user => 'ubuntu',
-        :identity_file =>  'c:/users/ofry/Documents/Dropbox/hp/hpcs/aofry_az3.pem'
-            #@config['hpcs']['ssl_ca_file']
-    }
+    MyCLI.option(:disable_editing, :long => "--disable-editing", :boolean => true)
 
-    #ary = ['name:tomcat', 'ls -la', other_opts]
-    ary = ['ssh', 'name:tomcat', 'ls -la']
-    #ssh = Chef::Knife::Ssh.new("name:tomcat 'ls -la'")
-    ssh = Chef::Knife::Ssh.new(ary)
-    ssh.run
+    knife = Chef::Knife.new
+    knife.options=MyCLI.options
 
+    #set up client creation arguments and run
+    args = ['client', 'list', '--disable-editing' ]
+    new_client = Chef::Knife.run(args, MyCLI.options)
   end
 
 end
+
+class MyCLI
+  include Mixlib::CLI
+end
+
+
+
 
 paasWorker = PaasWorker.new
 #paasWorker.initConfig
