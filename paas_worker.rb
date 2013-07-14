@@ -6,16 +6,16 @@ require 'chef/node'
 require 'yaml'
 
 class PaasWorker
+  @@config = YAML.load_file('./master.yaml')
+
   def initConfig
-    @config = YAML.load_file('master.yaml')
-
-    Chef::Config[:node_name]=config['connection']['node_name']
-    Chef::Config[:client_key]=config['connection']['client_key']
-    Chef::Config[:chef_server_url]=config['connection']['chef_server_url']
-    Chef::Config[:https_proxy]=config['hp_office']['https_proxy']
-    Chef::Config[:http_proxy]=config['hp_office']['http_proxy']
+    Chef::Config[:node_name]=@@config['connection']['node_name']
+    Chef::Config[:client_key]=@@config['connection']['client_key']
+    Chef::Config[:chef_server_url]=@@config['connection']['chef_server_url']
+    Chef::Config[:https_proxy]=@@config['hp_office']['https_proxy']
+    Chef::Config[:http_proxy]=@@config['hp_office']['http_proxy']
+    puts @@config
   end
-
 
   def printClients
     Chef::ApiClient.list.each do |cl|
@@ -76,7 +76,9 @@ end
 
 
 paasWorker = PaasWorker.new
-#paasWorker.initConfig
+paasWorker.initConfig
+
+paasWorker.printClients
 #paasWorker.setAttributes({"one" => "adi", "three" => "ofry"})
 
 #loadClient
@@ -86,4 +88,4 @@ paasWorker = PaasWorker.new
 #nrla.add_to_run_list(node, ['recipe[apache2]'])
 #Chef::Knife::NodeRunListAdd.add_to_run_list('tomcat', 'apache2')
 
-paasWorker.ssh
+#paasWorker.ssh

@@ -1,12 +1,10 @@
 connection:
-  node_name:        knife-laptop
-  client_key:       c:/users/ofry/.chef/knife.pem
-  chef_server_url:  https://15.185.249.30
+  node_name:        work
+  client_key:       c:/work/chef/work.pem
+  chef_server_url:  https://api.opscode.com/organizations/ofry
 hp_office:
-  #http_proxy:       http://rhvwebcachevip.bastion.europe.hp.com:8080
-  http_proxy:
-  #https_proxy:      http://rhvwebcachevip.bastion.europe.hp.com:8080
-  https_proxy:
+  http_proxy:       http://rhvwebcachevip.bastion.europe.hp.com:8080
+  https_proxy:      http://rhvwebcachevip.bastion.europe.hp.com:8080
 hpcs:
   hp_access_key:    E181R1S6S3VE62DW75F5
   hp_secret_key:    vZLMu7GOh1W8maefjT0CdrMxrvqRjpn0CN2BbV9M
