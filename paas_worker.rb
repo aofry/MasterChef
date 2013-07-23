@@ -75,10 +75,7 @@ end
 
 
 
-paasWorker = PaasWorker.new
-paasWorker.initConfig
 
-paasWorker.printClients
 #paasWorker.setAttributes({"one" => "adi", "three" => "ofry"})
 
 #loadClient

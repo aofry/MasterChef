@@ -1,1 +1,2 @@
-gem install chef fog win32-service --no-ri --no-rdoc
+gem install chef fog win32-service rspec --no-ri --no-rdoc
+pause
