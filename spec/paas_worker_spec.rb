@@ -1,10 +1,17 @@
 require_relative '../paas_worker'
 
 describe PaasWorker do
-  it "should return a blank instance" do
-    paasWorker = PaasWorker.new
-    paasWorker.initConfig
+  before do
+    @paasWorker = PaasWorker.new
+    @paasWorker.initConfig
+  end
 
-    paasWorker.printClients
+  it "should return a blank instance" do
+    @paasWorker.printClients
+  end
+
+  it "should change runllist for given node" do
+    items = ["apache2"]
+    #@paasWorker.changeRunList('tomcat', items)
   end
 end

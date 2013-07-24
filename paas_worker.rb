@@ -23,12 +23,15 @@ class PaasWorker
     end
   end
 
-  def changeRunList(itemToAdd)
-    node = Chef::Node.load('tomcat')
+  def changeRunList(nodeName, itemsToAdd)
+    node = Chef::Node.load(nodeName)
     puts node
     puts node.run_list
 
-    node.run_list << itemToAdd
+    itemsToAdd.each do |item|
+      node.run_list << item
+    end
+
     node.save
   end
 
@@ -79,7 +82,7 @@ end
 #paasWorker.setAttributes({"one" => "adi", "three" => "ofry"})
 
 #loadClient
-#changeRunList('apache2')
+#changeRunList('tomcat',['apache2'])
 
 #nrla = Chef::Knife::NodeRunListAdd.new
 #nrla.add_to_run_list(node, ['recipe[apache2]'])
