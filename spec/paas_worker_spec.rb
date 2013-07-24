@@ -11,7 +11,7 @@ describe PaasWorker do
   end
 
   it "should change runllist for given node" do
-    items = ["apache2"]
-    #@paasWorker.changeRunList('tomcat', items)
+    items = ["ntp"]
+    @paasWorker.changeRunList('tomcat', items)
   end
 end

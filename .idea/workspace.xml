@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list id="9d3cb3f2-312c-4fb4-8cf8-7c24f346c361" name="Default" comment="" />
-    <list default="true" id="8c4e1b61-541c-4de3-9517-6d2ecc2e4ba4" name="local-files" comment="made testing work for paas worker">
+    <list default="true" id="8c4e1b61-541c-4de3-9517-6d2ecc2e4ba4" name="local-files" comment="added changing run list">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paas_worker.rb" afterPath="$PROJECT_DIR$/paas_worker.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/paas_worker_spec.rb" afterPath="$PROJECT_DIR$/spec/paas_worker_spec.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MasterChef.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="8c4e1b61-541c-4de3-9517-6d2ecc2e4ba4" time="1374674583372" ignored="false" />
+    <file path="/Dummy.txt" changelist="8c4e1b61-541c-4de3-9517-6d2ecc2e4ba4" time="1374674628614" ignored="false" />
     <file path="/iaas_controller.rb" changelist="8c4e1b61-541c-4de3-9517-6d2ecc2e4ba4" time="1373572748235" ignored="false" />
     <file path="/mini_client.rb" changelist="9d3cb3f2-312c-4fb4-8cf8-7c24f346c361" time="1373476329671" ignored="false" />
     <file path="/client.yaml" changelist="9d3cb3f2-312c-4fb4-8cf8-7c24f346c361" time="1373378283400" ignored="false" />
@@ -21,7 +21,7 @@
     <file path="/install.bat" changelist="8c4e1b61-541c-4de3-9517-6d2ecc2e4ba4" time="1374564882974" ignored="false" />
     <file path="/tiny_server_usage.rb" changelist="8c4e1b61-541c-4de3-9517-6d2ecc2e4ba4" time="1374567517056" ignored="false" />
     <file path="/ssh_spec.rb" changelist="8c4e1b61-541c-4de3-9517-6d2ecc2e4ba4" time="1374567438158" ignored="false" />
-    <file path="/paas_worker_spec.rb" changelist="8c4e1b61-541c-4de3-9517-6d2ecc2e4ba4" time="1374670711357" ignored="false" />
+    <file path="/paas_worker_spec.rb" changelist="8c4e1b61-541c-4de3-9517-6d2ecc2e4ba4" time="1374676630079" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +85,7 @@
       <file leaf-file-name="paas_worker.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/paas_worker.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="3" selection-start="855" selection-end="855" vertical-scroll-proportion="-7.980392">
+            <state line="6" column="0" selection-start="115" selection-end="115" vertical-scroll-proportion="-2.0">
               <folding />
             </state>
           </provider>
@@ -94,7 +94,7 @@
       <file leaf-file-name="paas_worker_spec.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/paas_worker_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="2" selection-start="342" selection-end="342" vertical-scroll-proportion="0.43312103">
+            <state line="16" column="7" selection-start="338" selection-end="338" vertical-scroll-proportion="0.43312103">
               <folding />
             </state>
           </provider>
@@ -140,6 +140,15 @@
         <entry file="file://$PROJECT_DIR$/knife.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="10" column="6" selection-start="428" selection-end="428" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="master.yaml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/master.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="25" selection-start="296" selection-end="296" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -605,7 +614,11 @@
       <created>1374667936943</created>
       <updated>1374667936943</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="added changing run list">
+      <created>1374674648726</created>
+      <updated>1374674648726</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -680,7 +693,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="made testing work for paas worker" />
+    <option name="LAST_COMMIT_MESSAGE" value="added changing run list" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -702,6 +715,7 @@
     <MESSAGE value="update to work with hosted chef server" />
     <MESSAGE value="created testing for paas_worker" />
     <MESSAGE value="made testing work for paas worker" />
+    <MESSAGE value="added changing run list" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -723,13 +737,6 @@
     <entry file="file://C:/Ruby193/lib/ruby/gems/1.9.1/gems/chef-11.6.0.rc.0/lib/chef/api_client.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="138" column="0" selection-start="3643" selection-end="3643" vertical-scroll-proportion="0.33275864">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/master.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="41" selection-start="296" selection-end="296" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -790,13 +797,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/knife.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="6" selection-start="428" selection-end="428" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Ruby193/lib/ruby/gems/1.9.1/gems/chef-11.6.0.rc.0/spec/functional/knife/ssh_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="8" selection-start="727" selection-end="735" vertical-scroll-proportion="-2.1176472">
@@ -804,16 +804,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/knife.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="6" selection-start="428" selection-end="428" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/master.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="25" selection-start="296" selection-end="296" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/paas_worker.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="3" selection-start="855" selection-end="855" vertical-scroll-proportion="-7.980392">
+        <state line="6" column="0" selection-start="115" selection-end="115" vertical-scroll-proportion="-2.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/paas_worker_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="2" selection-start="342" selection-end="342" vertical-scroll-proportion="0.43312103">
+        <state line="16" column="7" selection-start="338" selection-end="338" vertical-scroll-proportion="0.43312103">
           <folding />
         </state>
       </provider>

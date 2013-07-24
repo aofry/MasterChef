@@ -14,7 +14,7 @@ class PaasWorker
     Chef::Config[:chef_server_url]=@config['connection']['chef_server_url']
     Chef::Config[:https_proxy]=@config['hp_office']['https_proxy']
     Chef::Config[:http_proxy]=@config['hp_office']['http_proxy']
-    puts @config
+    #puts @config
   end
 
   def printClients
