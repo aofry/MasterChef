@@ -2,28 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list id="9d3cb3f2-312c-4fb4-8cf8-7c24f346c361" name="Default" comment="" />
-    <list default="true" id="8c4e1b61-541c-4de3-9517-6d2ecc2e4ba4" name="local-files" comment="update to work with hosted chef server">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/paas_worker_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MasterChef.iml" afterPath="$PROJECT_DIR$/MasterChef.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/install.bat" afterPath="$PROJECT_DIR$/install.bat" />
+    <list default="true" id="8c4e1b61-541c-4de3-9517-6d2ecc2e4ba4" name="local-files" comment="created testing for paas_worker">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paas_worker.rb" afterPath="$PROJECT_DIR$/paas_worker.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/paas_worker_spec.rb" afterPath="$PROJECT_DIR$/spec/paas_worker_spec.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MasterChef.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="8c4e1b61-541c-4de3-9517-6d2ecc2e4ba4" time="1374559492098" ignored="false" />
+    <file path="/Dummy.txt" changelist="8c4e1b61-541c-4de3-9517-6d2ecc2e4ba4" time="1374570595727" ignored="false" />
     <file path="/iaas_controller.rb" changelist="8c4e1b61-541c-4de3-9517-6d2ecc2e4ba4" time="1373572748235" ignored="false" />
     <file path="/mini_client.rb" changelist="9d3cb3f2-312c-4fb4-8cf8-7c24f346c361" time="1373476329671" ignored="false" />
     <file path="/client.yaml" changelist="9d3cb3f2-312c-4fb4-8cf8-7c24f346c361" time="1373378283400" ignored="false" />
     <file path="/master.yaml" changelist="8c4e1b61-541c-4de3-9517-6d2ecc2e4ba4" time="1373783127971" ignored="false" />
-    <file path="/paas_worker.rb" changelist="8c4e1b61-541c-4de3-9517-6d2ecc2e4ba4" time="1373812432219" ignored="false" />
+    <file path="/paas_worker.rb" changelist="8c4e1b61-541c-4de3-9517-6d2ecc2e4ba4" time="1374584174811" ignored="false" />
     <file path="/temp.rb" changelist="9d3cb3f2-312c-4fb4-8cf8-7c24f346c361" time="1373476970337" ignored="false" />
     <file path="/adi.rb" changelist="8c4e1b61-541c-4de3-9517-6d2ecc2e4ba4" time="1373574577264" ignored="false" />
     <file path="/a.dummy" changelist="8c4e1b61-541c-4de3-9517-6d2ecc2e4ba4" time="1373781971541" ignored="false" />
     <file path="/install.bat" changelist="8c4e1b61-541c-4de3-9517-6d2ecc2e4ba4" time="1374564882974" ignored="false" />
     <file path="/tiny_server_usage.rb" changelist="8c4e1b61-541c-4de3-9517-6d2ecc2e4ba4" time="1374567517056" ignored="false" />
     <file path="/ssh_spec.rb" changelist="8c4e1b61-541c-4de3-9517-6d2ecc2e4ba4" time="1374567438158" ignored="false" />
-    <file path="/paas_worker_spec.rb" changelist="8c4e1b61-541c-4de3-9517-6d2ecc2e4ba4" time="1374569562850" ignored="false" />
+    <file path="/paas_worker_spec.rb" changelist="8c4e1b61-541c-4de3-9517-6d2ecc2e4ba4" time="1374584045038" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,10 +82,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="paas_worker.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="paas_worker.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/paas_worker.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="0" selection-start="1827" selection-end="1827" vertical-scroll-proportion="0.0">
+            <state line="5" column="42" selection-start="114" selection-end="114" vertical-scroll-proportion="0.06329114">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="paas_worker_spec.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/paas_worker_spec.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="3" selection-start="195" selection-end="195" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -124,15 +131,6 @@
         <entry file="file://C:/Ruby193/lib/ruby/gems/1.9.1/gems/chef-11.6.0.rc.0/spec/functional/knife/ssh_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="21" column="8" selection-start="727" selection-end="735" vertical-scroll-proportion="-2.1176472">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="paas_worker_spec.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/spec/paas_worker_spec.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="9" selection-start="197" selection-end="197" vertical-scroll-proportion="0.4841772">
               <folding />
             </state>
           </provider>
@@ -187,8 +185,8 @@
         <option value="$PROJECT_DIR$/install.bat" />
         <option value="C:/Ruby193/lib/ruby/gems/1.9.1/gems/chef-11.6.0.rc.0/spec/functional/knife/ssh_spec.rb" />
         <option value="$PROJECT_DIR$/tiny_server_usage.rb" />
-        <option value="$PROJECT_DIR$/paas_worker.rb" />
         <option value="$PROJECT_DIR$/spec/paas_worker_spec.rb" />
+        <option value="$PROJECT_DIR$/paas_worker.rb" />
       </list>
     </option>
   </component>
@@ -268,8 +266,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="203" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="203" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="193" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="193" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
@@ -277,9 +275,9 @@
     <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="214" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="202" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="192" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="657" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="669" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="712" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="212" />
     <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="207" />
@@ -608,7 +606,11 @@
       <created>1373812619419</created>
       <updated>1373812619419</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="created testing for paas_worker">
+      <created>1374570625139</created>
+      <updated>1374570625139</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -625,7 +627,8 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32814237" sideWeight="0.43543223" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32767403" sideWeight="0.49786553" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270869" sideWeight="0.49786553" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.7846837" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -635,7 +638,6 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4173765" sideWeight="0.56083244" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -683,7 +685,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="update to work with hosted chef server" />
+    <option name="LAST_COMMIT_MESSAGE" value="created testing for paas_worker" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -703,6 +705,7 @@
     <MESSAGE value="try to ssh" />
     <MESSAGE value="local-files" />
     <MESSAGE value="update to work with hosted chef server" />
+    <MESSAGE value="created testing for paas_worker" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -791,13 +794,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tiny_server_usage.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="5" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Ruby193/lib/ruby/site_ruby/1.9.1/rubygems/custom_require.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="0" selection-start="1040" selection-end="1040" vertical-scroll-proportion="0.3322034">
@@ -812,16 +808,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/paas_worker.rb">
+    <entry file="file://$PROJECT_DIR$/spec/paas_worker_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="0" selection-start="1827" selection-end="1827" vertical-scroll-proportion="0.0">
+        <state line="9" column="3" selection-start="195" selection-end="195" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/paas_worker_spec.rb">
+    <entry file="file://$PROJECT_DIR$/paas_worker.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="9" selection-start="197" selection-end="197" vertical-scroll-proportion="0.4841772">
+        <state line="5" column="42" selection-start="114" selection-end="114" vertical-scroll-proportion="0.06329114">
           <folding />
         </state>
       </provider>
