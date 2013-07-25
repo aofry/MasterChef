@@ -73,6 +73,13 @@ class PaasWorker
     Chef::DataBag.load(bagName)
   end
 
+  def updateDataBag(bagName, data)
+    databag_item = Chef::DataBagItem.new
+    databag_item.data_bag(bagName)
+    databag_item.raw_data = data
+    databag_item.save
+  end
+
 end
 
 class MyCLI
@@ -82,7 +89,14 @@ end
 
 paasWorker = PaasWorker.new
 paasWorker.initConfig
-puts paasWorker.getDataBag('MyBag')
+
+adi = {
+    "id" => "adi",
+    "Full Name" => "ofry",
+    "shell" => "/bin/zsh"
+}
+
+puts paasWorker.updateDataBag('MyBag', adi)
 
 
 
