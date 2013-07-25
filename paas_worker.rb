@@ -74,10 +74,17 @@ class PaasWorker
   end
 
   def updateDataBag(bagName, data)
+    #http://wiki.opscode.com/display/chef10/Data+Bags
     databag_item = Chef::DataBagItem.new
     databag_item.data_bag(bagName)
     databag_item.raw_data = data
     databag_item.save
+  end
+
+  def createDataBag(bagName)
+    bag = Chef::DataBag.new
+    bag.name(bagName)
+    bag.save
   end
 
 end
@@ -96,8 +103,9 @@ adi = {
     "shell" => "/bin/zsh"
 }
 
-puts paasWorker.updateDataBag('MyBag', adi)
-
+#puts paasWorker.updateDataBag('MyBag', adi)
+puts paasWorker.getDataBag('MyBag')
+#paasWorker.createDataBag('someNewBag')
 
 
 #paasWorker.setAttributes({"one" => "adi", "three" => "ofry"})

@@ -14,4 +14,14 @@ describe PaasWorker do
     items = ["ntp"]
     @paasWorker.changeRunList('tomcat', items)
   end
+
+  it "should update data bag" do
+    someBag = {
+        "id" => "adi",
+        "Full Name" => "ofry",
+        "shell" => "/bin/zsh"
+    }
+
+    puts @paasWorker.updateDataBag('MyBag', someBag)
+  end
 end
