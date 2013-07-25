@@ -69,6 +69,10 @@ class PaasWorker
     new_client = Chef::Knife.run(args, MyCLI.options)
   end
 
+  def getDataBag(bagName)
+    Chef::DataBag.load(bagName)
+  end
+
 end
 
 class MyCLI
@@ -76,6 +80,9 @@ class MyCLI
 end
 
 
+paasWorker = PaasWorker.new
+paasWorker.initConfig
+puts paasWorker.getDataBag('MyBag')
 
 
 
