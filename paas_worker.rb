@@ -84,7 +84,11 @@ class PaasWorker
   def createDataBag(bagName)
     bag = Chef::DataBag.new
     bag.name(bagName)
-    bag.save
+    bag.create
+  end
+
+  def delDataBag(bag)
+    bag.destroy
   end
 
 end
@@ -97,15 +101,10 @@ end
 paasWorker = PaasWorker.new
 paasWorker.initConfig
 
-adi = {
-    "id" => "adi",
-    "Full Name" => "ofry",
-    "shell" => "/bin/zsh"
-}
-
+#paasWorker.delDataBag(paasWorker.getDataBag('someNewBag'))
 #puts paasWorker.updateDataBag('MyBag', adi)
-puts paasWorker.getDataBag('MyBag')
-#paasWorker.createDataBag('someNewBag')
+#puts paasWorker.getDataBag('MyBag')
+#paasWorker.createDataBag("someNewBag")
 
 
 #paasWorker.setAttributes({"one" => "adi", "three" => "ofry"})

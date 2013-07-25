@@ -24,4 +24,14 @@ describe PaasWorker do
 
     puts @paasWorker.updateDataBag('MyBag', someBag)
   end
+
+  it "should create new data bag" do
+    @paasWorker.createDataBag('aaa')
+
+    createdBag = @paasWorker.getDataBag('aaa')
+
+    expect(createdBag).to be_true
+
+    @paasWorker.delDataBag(createdBag)
+  end
 end
