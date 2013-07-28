@@ -91,6 +91,19 @@ class PaasWorker
     bag.destroy
   end
 
+  def bootstrap
+    MyCLI.option(:disable_editing, :long => "--disable-editing", :boolean => true)
+
+    knife = Chef::Knife.new
+    knife.options=MyCLI.options
+
+    Chef::Config[:validation_client_name]='ofry-validator'
+    Chef::Config[:validation_key]='c:/work/.chef/ofry-validator.pem'
+    #knife bootstrap localhost -p 2222 -x vagrant -i c:/Users/adi/.vagrant.d/insecure_private_key -N vagrant --sudo
+    args = ['bootstrap', 'localhost', '-p', '2222', '-x' , 'vagrant', '-i', 'c:/Users/adi/.vagrant.d/insecure_private_key', '-N', 'vagrant', '--sudo']
+    new_client = Chef::Knife.run(args, MyCLI.options)
+  end
+
 end
 
 class MyCLI
@@ -101,6 +114,7 @@ end
 paasWorker = PaasWorker.new
 paasWorker.initConfig
 
+paasWorker.bootstrap
 #paasWorker.delDataBag(paasWorker.getDataBag('someNewBag'))
 #puts paasWorker.updateDataBag('MyBag', adi)
 #puts paasWorker.getDataBag('MyBag')
