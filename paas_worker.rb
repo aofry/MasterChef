@@ -104,6 +104,9 @@ class PaasWorker
     new_client = Chef::Knife.run(args, MyCLI.options)
   end
 
+  def chefBootstrap
+    #knife bootstrap localhost -p 2222 -x vagrant -i C:/Users/ofry/.vagrant.d/insecure_private_key -N vagrant --sudo
+  end
 end
 
 class MyCLI

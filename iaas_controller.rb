@@ -50,12 +50,6 @@ class IaaSController
         {
             'security_groups' => ["adi"],
             'key_name' => "aofry_az3",
-            #'config_drive' => true,
-            #'user_data_encoded' => ["This is some encoded user data"].pack('m'),
-            #'personality' => [{
-            #                      'contents'  => File.read("c:/junk/knife.rb"),
-            #                      'path'      => "/home/ubuntu/knife-adi.rb"
-            #                  }]
         }
     )
 
@@ -71,29 +65,6 @@ class IaaSController
     puts server['public_ip_address']
 
     @serverId = server['id']
-    #server.keys.sort.each do |val|
-    #  puts "#{key} " + server[val]
-    #end
-
-    #new_server = @conn.servers.create(
-    #    :name => "Adi_Ofry_Runtime3",
-    #    :flavor_id => 100,
-    #    :image_id => 48335,
-    #    :key_name => "aofry_az3",
-    #    :security_groups => ["adi"]
-    #)
-    #puts 'finished create call'
-    #sleep(10)
-    #puts new_server
-    #
-    #unless new_server.nil?
-    #  puts.new_server.id # returns the id of the server
-    #  puts.new_server.name # => "My Shiny Server"
-    #  puts.new_server.state # returns the state of the server e.g. BUILD
-    #  puts.new_server.private_ip_address # returns the private ip address
-    #  puts.new_server.public_ip_address # returns the public ip address, if any assigned
-    #end
-    #puts 'after block'
   end
 end
 
